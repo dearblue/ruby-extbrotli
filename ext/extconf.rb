@@ -18,6 +18,7 @@ files = Dir.glob(target).map { |n| File.basename n }
 rejects = (RbConfig::CONFIG["arch"] =~ /mswin|mingw/) ? /_pthreads_/ : /_win32_/
 files.reject! { |n| n =~ rejects }
 $srcs = files + [encsrc, decsrc]
+$srcs.uniq!
 
 #$VPATH.push "$(srcdir)/../contrib"
 

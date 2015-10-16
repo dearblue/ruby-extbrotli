@@ -1,3 +1,3 @@
 module Brotli
-  VERSION = "0.0.1.PROTOTYPE"
+  VERSION = "0.0.1.PROTOTYPE2"
 end
